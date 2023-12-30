@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+}
+.header{
+    min-width: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url(bg1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+nav a {
+    color: aliceblue;
+    font-size:smaller;
+    text-decoration: none;
+}
+nav a span{
+    color: rgb(0, 136, 255);
+    font-weight: bold;
+    font-size: x-large;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+.nav-link ul li a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav-link ul li a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    border-radius: 3px;
+    width: 0%;
+    background-color: rgb(0, 136, 255);
+    transition: .3s ;
+}
+.nav-link ul li a:hover:after{
+    width: 100%;
+
+}
+
+
+
+
+
+.text-box{
+    width: 90%;
+    max-width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    font-size: 14px;
+}
+.text-box a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 8px 40px;
+    border: 1px solid #ffffff ;
+    margin-top: 10px;
+    background: transparent;
+    transition: .3s;
+}
+.text-box a:hover{
+    background: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+}
+
+
+
+
+
+.all-carte{
+  display:flex;
+}
+.all-carte h1{
+  margin: auto;
+  font-size: 40px;
+}
+.carte {
+  max-width: 300px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.carte:hover {
+  max-width: 300px;
+  margin: 20px auto;
+  background-color: rgb(121, 193, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0 , 0.8);
+}
+.carte img {
+  width: 100%;
+  height: 65vh;
+  border-bottom: 1px solid #ddd;
+}
+.carte .info {
+  padding: 15px;
+}
+.carte h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.carte p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+
+
+
+.last-sec{
+  min-width: 100vh;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url(bg1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+.last-sec img{
+  border-radius: 20px;
+  padding-top: 50px;
+  padding-left: 20px;
+  width: 45%;
+  position: absolute;
+}
+.last-sec p {
+  margin-left: 50%;
+  padding-top: 60px;
+  font-size: 20px;
+}
+.last-sec h2 {
+  padding-top: 30px;
+  margin-left: 50%;
+  font-size: 50px;
+}
+.last-sec a  {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #ffffff ;
+  margin-left: 50%;
+  margin-top: 25px;
+  background: transparent;
+  transition: .3s;
+}
+.last-sec a:hover{
+  background: rgb(0, 136, 255);
+  border: 1px solid rgb(0, 136, 255);
+}
+
+
+
+
+
+.insc {
+    max-width: 400px;
+    margin: 55px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .insc img{
+    width: 200px;
+  }
+  .insc h2 {
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .insc form {
+    display: flex;
+    flex-direction: column;
+  }
+  .insc input,
+  .insc button , .insc textarea {
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+  }
+  .insc ::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+  }
+  .register{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    transition: .3s;
+  }
+  .insc form button:hover{
+    background: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+  }
+  .insc .form-bottom {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .insc .form-bottom input {
+    margin-right: 10px;
+  }
+  .insc form input:hover {
+    background: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+  }
+  .insc .form-bottom p {
+    font-size: 12px;
+  }
+  .insc .form-bottom-msg {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+  .insc .form-bottom-msg a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+ .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .bar hr {
+    width: 200px;
+    margin: 10px 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  .bar p {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13px;
+  }
+  .social-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 280px;
+    height: 47px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .social-buttons button:hover {
+    background: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+  }
+  .social-buttons button img {
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+  }
+  .social-buttons button span {
+    font-weight: lighter;
+    margin-left: 20px;
+    color: white;
+  }
+
+
+
+
+
+  .bodyx{
+    min-width: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) , url(bg1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+  .account {
+    max-width: 1300px;
+    margin: 55px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  .account-right{
+    margin: 0px auto;
+    margin-left: 50px;
+  }
+  .account-right table th {
+    text-align: left;
+    padding: 5px;
+  }
+  .account-right table tr td{
+    padding: 5px;
+  }
+  .account-right table tr td a {
+    
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+  }
+  .account-right table tr td a:hover {
+    color: rgb(253, 253, 253);
+    font-size: 20px ;
+  }
+  .account-right a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 8px 40px;
+    border: 1px solid #ffffff ;
+    margin-top: 10px;
+    background: transparent;
+    transition: .3s;
+}
+.account-right a:hover{
+    background: rgb(0, 136, 255);
+    border: 1px solid rgb(0, 136, 255);
+}
+
+
+
+
+
+  .cours-right {
+    margin: 0px auto;
+    margin-left: 50px;
+  }
+  .cours-right table th {
+    text-align: left;
+    padding: 5px;
+  }
+  .cours-right table tr td{
+    height: 40px;
+    padding: 5px;
+  }
+  .cours-right table tr td a {
+    
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+  }
+  .cours-right table tr td a:hover {
+    color: rgb(253, 253, 253);
+    font-size: 18px ;
+  }
+  
+
